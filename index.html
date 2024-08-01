@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Magetan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">Kuliner Magetan</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Cari Makanan atau Minuman...">
+        </div>
+        <div class="menu">
+            <button id="menuButton">Menu</button>
+            <button id="logoutButton">Log Out</button>
+        </div>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+        <p>Additional information</p>
+    </div>
+    <main>
+        <h1 class="main-title">Rekomendasi minggu ini</h1>
+        <p class="subtitle">Lagi viral banget!</p>
+        <div id="card-container" class="cards">
+            <!-- Cards will be generated here by JavaScript -->
+        </div>
+        <div class="pagination">
+            <button id="prevPage" onclick="prevPage()">Previous Page</button>
+            <span id="pageNumber">Page 1</span>
+            <button id="nextPage" onclick="nextPage()">Next Page</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
